@@ -1,3 +1,60 @@
+# React Quiz
+
+A quiz-taking single page application made using the React library.
+
+**[Try the website here.](https://michaelxf.github.io/react-quiz/build/)**
+
+`https://michaelxf.github.io/react-quiz/build/`
+
+# Packages used
+
+| Package Name                                                       | Purpose                               |
+| ------------------------------------------------------------------ | ------------------------------------- |
+| [React Router Dom](https://www.npmjs.com/package/react-router-dom) | Handles pages                         |
+| [Chakra-UI](https://chakra-ui.com/)                                | UI Components, Icons                  |
+| [HashIds](https://www.npmjs.com/package/hashids)                   | Encode the question number in the URL |
+
+# Quiz.json
+
+The quiz is based on the Quiz.json.
+
+```json
+{
+  "title": "Example Quiz",
+  "timeLimitMinutes": 15,
+  "shuffleQuestionOrder": true,
+  "shuffleMultipleChoiceOrder": true,
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "title": "What is 1+1?",
+      "choices": ["2", "4", "3", "1"],
+      "answer": "2"
+    },
+    {
+      "type": "userAnswer",
+      "title": "What is 4-2?",
+      "answers": ["2", "two"]
+    },
+    {
+      "type": "multipleChoice",
+      "title": "Is this webpage created with React?",
+      "choices": ["No", "Yes"],
+      "answer": "Yes"
+    }
+  ]
+}
+```
+
+# Supported Question Types
+
+- [x] Multiple Choice
+- [x] Short Answer
+
+# License
+
+MIT License.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

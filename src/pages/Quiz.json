@@ -1,0 +1,25 @@
+{
+  "title": "Example Quiz",
+  "timeLimitMinutes": 15,
+  "shuffleQuestionOrder": true,
+  "shuffleMultipleChoiceOrder": true,
+  "questions": [
+    {
+      "type": "multipleChoice",
+      "title": "What is 1+1?",
+      "choices": ["2", "4", "3", "1"],
+      "answer": "2"
+    },
+    {
+      "type": "userAnswer",
+      "title": "What is 4-2?",
+      "answers": ["2", "two"]
+    },
+    {
+      "type": "multipleChoice",
+      "title": "Is this webpage created with React?",
+      "choices": ["No", "Yes"],
+      "answer": "Yes"
+    }
+  ]
+}

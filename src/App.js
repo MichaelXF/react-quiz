@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { ChakraProvider } from "@chakra-ui/react";
+import { useMemo, useState } from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRouter from "./AppRouter";
+import { QuizContext } from "./QuizContext";
 
 function App() {
+  var [quiz, setQuiz] = useState();
+
+  var quizValue = useMemo(() => {
+    return { quiz, setQuiz };
+  }, [quiz]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <QuizContext.Provider value={quizValue}>
+      <ChakraProvider>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <AppRouter />
+        </BrowserRouter>
+      </ChakraProvider>
+    </QuizContext.Provider>
   );
 }
 

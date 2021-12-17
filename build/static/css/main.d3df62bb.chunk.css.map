@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA,KACE,QACF,CAEA,EACE,qBACF,CAEA,SAEE,mCACF","file":"main.d3df62bb.chunk.css","sourcesContent":["body {\n  margin: 0;\n}\n\n* {\n  box-sizing: border-box;\n}\n\nstrong,\nb {\n  color: var(--chakra-colors-gray-700);\n}\n"]}
